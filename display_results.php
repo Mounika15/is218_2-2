@@ -22,6 +22,8 @@
         $error_message = 'Years must be a valid whole number.';
     } else if ( $years <= 0 ) {
         $error_message = 'Years must be greater than zero.';
+    } else if ( $interest_rate >= 15 ) {
+        $error_message = 'Interest rate must be less than or equal to fifteen.'; 
     } else if ( $years > 30 ) {
         $error_message = 'Years must be less than 31.';
     // set error message to empty string if no invalid entries
